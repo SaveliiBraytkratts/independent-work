@@ -1,5 +1,4 @@
-﻿
-double a;   
+﻿double a;   
 a = 7;
 if (a % 2 == 0)
 {
