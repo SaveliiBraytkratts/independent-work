@@ -13,10 +13,10 @@
                 if(division2 == remainder2)
                     Console.WriteLine("Да");
                 else
-                Console.WriteLine("Нет"); 
+                    Console.WriteLine("Нет"); 
             }
             else 
-            Console.WriteLine("Нет");
+                Console.WriteLine("Нет");
             
     }
     else
