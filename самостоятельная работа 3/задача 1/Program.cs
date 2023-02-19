@@ -1,6 +1,6 @@
 ﻿void CheckPalindromicNumber(int number)
 {
-    if(number >= 10000)
+    if(number >= 10000 && number < 100000)
     {
         int division1 = number / 10000;
         int remainder1 = number % 10;
