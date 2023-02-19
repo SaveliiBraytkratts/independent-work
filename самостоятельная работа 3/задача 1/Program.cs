@@ -12,6 +12,8 @@
                 int remainder2 = number % 10;
                 if(division2 == remainder2)
                     Console.WriteLine("Да");
+                else
+                Console.WriteLine("Нет"); 
             }
             else 
             Console.WriteLine("Нет");
