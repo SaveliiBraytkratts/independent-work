@@ -7,7 +7,7 @@
         masiv[index] = new Random().Next(10, 99);
         index++;
     }
-    
+
 }
 
 void PrintArray(int[] mas)
@@ -27,9 +27,9 @@ void CheckEvenness(int[] number)
     int index = 1;
     int variable = 0;
     while (index < length)
-    {  
-    variable = (variable + number[index] );    
-    index = index + 2;
+    {
+        variable = (variable + number[index]);
+        index = index + 2;
     }
     Console.WriteLine(" ");
     Console.WriteLine(variable);

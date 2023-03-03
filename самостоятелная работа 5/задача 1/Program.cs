@@ -7,7 +7,7 @@
         masiv[index] = new Random().Next(100, 999);
         index++;
     }
-    
+
 }
 
 void PrintArray(int[] mas)
@@ -30,7 +30,7 @@ void CheckEvenness(int[] number)
     {
         if (number[index] % 2 == 0)
         {
-           variable = (variable + 1 );
+            variable = (variable + 1);
         }
         index++;
     }
