@@ -5,7 +5,7 @@ int четверг = 4;
 int пятница = 5;
 int суббота = 6;
 int воскресение = 7;
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 if (number <= 5 )
 {
     Console.WriteLine("нет");
