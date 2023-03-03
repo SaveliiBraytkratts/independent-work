@@ -4,7 +4,7 @@
     int index = 0;
     while (index < length)
     {
-        masiv[index] = new Random().Next(100, 999);
+        masiv[index] = new Random().Next(10, 99);
         index++;
     }
     
@@ -35,7 +35,9 @@ void CheckEvenness(int[] number)
     Console.WriteLine(variable);
 }
 
-int[] arrey = new int[4];
+Console.Write("Введите размер массива:");
+int N = int.Parse(Console.ReadLine()!);
+int[] arrey = new int[N];
 FillArray(arrey);
 PrintArray(arrey);
 CheckEvenness(arrey);

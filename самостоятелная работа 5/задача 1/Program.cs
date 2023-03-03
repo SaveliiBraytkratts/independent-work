@@ -28,16 +28,19 @@ void CheckEvenness(int[] number)
     int variable = 0;
     while (index < length)
     {
-        if (number[index] % 2 == 1)
+        if (number[index] % 2 == 0)
         {
            variable = (variable + 1 );
         }
         index++;
     }
+    Console.WriteLine(" ");
     Console.WriteLine(variable);
 }
 
-int[] arrey = new int[4];
+Console.Write("Введите Введите размер массива:");
+int N = int.Parse(Console.ReadLine()!);
+int[] arrey = new int[N];
 FillArray(arrey);
 PrintArray(arrey);
 CheckEvenness(arrey);
