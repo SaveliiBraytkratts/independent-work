@@ -35,13 +35,13 @@ void Coordinates(int position1, int position2 )
 
 }
 
+FillArray(matrixA);
+PrintArray(matrixA);
 Console.Write("Введите строку:");
 int pos1 = int.Parse(Console.ReadLine()!);
 Console.Write("Введите столбец:");
 int pos2 = int.Parse(Console.ReadLine()!);
 Coordinates(pos1, pos2);
-FillArray(matrixA);
-PrintArray(matrixA);
 // Console.WriteLine();
 // int[,] matrixA = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, { 8, 4, 2, 4 } };
 // FillArray(matrixA);
