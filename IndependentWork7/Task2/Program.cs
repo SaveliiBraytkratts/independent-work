@@ -1,19 +1,19 @@
-﻿void FillArray(int[,] matr)// метод для заполнения матрицы случайными числами
+﻿void FillArray(int[,] matr)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)  // GetLength(0) - возвращает кол-во строк
+    for (int i = 0; i < matr.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)  // GetLength(1) - возвращает кол-во столбцов
+        for (int j = 0; j < matr.GetLength(1); j++)
         {
-            matr[i, j] = new Random().Next(1, 10);// [1,10)- полуинтервал,т.е. 10- не войдет
+            matr[i, j] = new Random().Next(1, 10);
         }
     }
 }
 
-void PrintArray(int[,] matr)  // метод для печати двумерного массива
+void PrintArray(int[,] matr)
 {
-    for (int i = 0; i < matr.GetLength(0); i++)  // GetLength(0) - чтобы не писать каждый раз кол-во строк
+    for (int i = 0; i < matr.GetLength(0); i++)
     {
-        for (int j = 0; j < matr.GetLength(1); j++)  // GetLength(1) - чтобы не писать каждый раз кол-во столбцов
+        for (int j = 0; j < matr.GetLength(1); j++)
         {
             Console.Write($"{matr[i, j]} ");
 
@@ -22,17 +22,18 @@ void PrintArray(int[,] matr)  // метод для печати двумерно
     }
 }
 
-int [,] matrixA = new int [4,4];
+int[,] matrixA = new int[4, 4];
 
-void Coordinates(int position1, int position2 )
+void Coordinates(int position1, int position2)
 {
-    if (position1 < 0 | position1 > matrixA.GetLength(0) | position2 < 0 | position2 > matrixA.GetLength(1))
+    if (position1 < matrixA.GetLength(0) && position2 < matrixA.GetLength(1))
     {
-        Console.WriteLine("такого числа в массиве нет");
-        return;
+        Console.WriteLine(matrixA[position1, position2]);
     }
-    
-
+    else
+    {
+        Console.WriteLine($"{position1};{position2} -> такого числа в массиве нет");
+    }
 }
 
 FillArray(matrixA);
@@ -42,7 +43,3 @@ int pos1 = int.Parse(Console.ReadLine()!);
 Console.Write("Введите столбец:");
 int pos2 = int.Parse(Console.ReadLine()!);
 Coordinates(pos1, pos2);
-// Console.WriteLine();
-// int[,] matrixA = new int[,] { { 1, 4, 7, 2 }, { 5, 9, 2, 3 }, { 8, 4, 2, 4 } };
-// FillArray(matrixA);
-Console.WriteLine(matrixA[pos1, pos2]);
